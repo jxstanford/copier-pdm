@@ -2,6 +2,7 @@
 set -eu
 export TESTING=true
 LICENSES=(
+  'Proprietary'
   'Academic Free License v3.0'
   'Apache License 2.0'
   'Artistic License 2.0'
@@ -49,11 +50,11 @@ cp -rf . "${template}"
 
 for license in "${LICENSES[@]}"; do
   copier copy -f --trust "${template}" "${output}" \
-    -d project_name="Pawamoy Testing" \
+    -d project_name="Jxstanford Testing" \
     -d project_description='Testing this great template' \
-    -d author_fullname="Timothée Mazzucotelli" \
-    -d author_username="pawamoy" \
-    -d author_email="pawamoy@pm.me" \
+    -d author_fullname="John Stanford" \
+    -d author_username="jxstanford" \
+    -d author_email="jxstanford@wemodulate.energy" \
     -d copyright_license="${license}" &>/dev/null
   (
     cd "${output}"

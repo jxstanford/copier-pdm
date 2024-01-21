@@ -1,5 +1,5 @@
 # CONFIGURATION -------------------------
-_min_copier_version: "8"
+_min_copier_version: "9"
 _envops:
   autoescape: false
   keep_trailing_newline: true
@@ -26,17 +26,17 @@ project_description:
 author_fullname:
   type: str
   help: Your full name
-  default: "{{ 'Timothée Mazzucotelli' | git_user_name }}"
+  default: "{{ 'John Stanford' | git_user_name }}"
 
 author_email:
   type: str
   help: Your email
-  default: "{{ 'pawamoy@pm.me' | git_user_email }}"
+  default: "{{ 'jxstanford@wemoduleate.energy' | git_user_email }}"
 
 author_username:
   type: str
   help: Your username (e.g. on GitHub)
-  default: pawamoy
+  default: jxstanford
 
 repository_provider:
   type: str
@@ -73,8 +73,9 @@ copyright_date:
 copyright_license:
   type: str
   help: Your project's license
-  default: ISC License
+  default: Proprietary
   choices:
+  - Proprietary
   - Academic Free License v3.0
   - Apache License 2.0
   - Artistic License 2.0
